@@ -1,0 +1,20 @@
+{
+  "/local": {
+    "target": "http://localhost:8080/sdaApi/rest",
+    "secure": false,
+    "pathRewrite": {
+      "^/local": ""
+    },
+    "logLevel": "debug",
+    "changeOrigin": true
+  },
+  "/dev": {
+    "target": "https://secweb.des.intra.rs.gov.br/sdaApi/rest",
+    "secure": false,
+    "pathRewrite": {
+      "^/dev": ""
+    },
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
